@@ -1,0 +1,12 @@
+﻿@page
+@model Travel_Time_and_Distance.Pages.Locations.AddLocationsModel
+@{
+    ViewData["Title"] = "Add Locations";
+}
+
+<h1>Add Locations</h1>
+<form method="post">
+    <input type="text" asp-for="Locations.LocationStart" placeholder="Start Location" />
+    <input type="text" asp-for="Locations.LocationFinish" placeholder="Finish Location" />
+    <button type="submit">Submit</button>
+</form>
